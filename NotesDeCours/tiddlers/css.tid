@@ -1,0 +1,19 @@
+created: 20181113131237544
+modified: 20181113131325982
+tags: $:/tags/Stylesheet
+title: css
+type: text/css
+
+.boite {
+   background: #dddddd;
+   padding: 1em;
+}
+
+/* Pour cacher dates */
+.tc-story-river .tc-subtitle {
+   display:none;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
