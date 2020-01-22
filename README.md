@@ -1,3 +1,3 @@
-# 420-DZZ-LI-EM
+# 420-XXX-LI-EM
 
-Notes du cours 420-DZZ-LI
+Gabarit de notes de cours
