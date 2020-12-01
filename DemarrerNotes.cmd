@@ -22,4 +22,4 @@ if not exist %fichierServer%.orig (
 xcopy /y Server.cmd %fichierServer%
 
 :: Lance NodeJSPortable
-start ..\..\NodeJSPortable.exe
+start /min ..\..\NodeJSPortable.exe

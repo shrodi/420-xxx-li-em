@@ -28,7 +28,7 @@ if "%ERRORLEVEL%" equ "0" (
 :: La variable dossierCours est définie dans le script DemarrerNotes.cmd
 cd %dossierCours%
 :: Démarre TiddlyWiki en mode serveur
-start tiddlywiki NotesDeCours --server %portLibre%
+start /min tiddlywiki NotesDeCours --server %portLibre%
 
 :: Attend un peu que le serveur soit démarré
 timeout 5
