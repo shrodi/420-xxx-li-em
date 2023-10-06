@@ -8840,11 +8840,11 @@ Error message and password prompt
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1728&quot;
+            &quot;text&quot;: &quot;2560&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;3073&quot;
+            &quot;text&quot;: &quot;1440&quot;
         }
     }
 }</pre>
@@ -8964,7 +8964,7 @@ Error message and password prompt
 <div bag="default" created="20181113130651975" modified="20181113130653357" revision="0" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki">
 <pre>fluid-fixed</pre>
 </div>
-<div bag="default" created="20181113131237544" modified="20230928144316326" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
+<div bag="default" created="20181113131237544" modified="20231006151116436" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
 <pre>.boite {
    background: #dddddd;
    padding: 1em;
@@ -8992,6 +8992,16 @@ Error message and password prompt
 
 .defi::before {
    background-image: url('https://i.imgur.com/gCXeYiN.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 200px;
+   height: 100px;
+   content:&quot;&quot;;
+}
+
+.attention::before {
+   background-image: url('https://i.imgur.com/TGHe7KV.png');
    background-size: contain;
    background-repeat: no-repeat;
    display: inline-block;
