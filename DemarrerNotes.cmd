@@ -6,5 +6,5 @@
 :: Redémarre minimisé (donc on ne devrait voir que très brièvement la fenêtre MS-DOS)
 :: if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && exit
 
-:: Démarre script PS principal
+:: Démarre script PS principal dans une fenêtre minimisée
 start "" /min powershell -executionpolicy bypass -File .\main.ps1 && exit
