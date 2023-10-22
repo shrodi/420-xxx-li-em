@@ -46,7 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>420-XXX-LI Nom du cours (session) — Cégep Limoilou – Enseignant: Eric Martel</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
-
+<link rel="stylesheet" href="https://codepen.io/shrodi/pen/PoVoaKX.css">
 
 </head>
 <body class="tc-body">
@@ -147,6 +147,14 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/showeditpreview</li>
+
+<li>$:/state/tab--868624678</li>
+
+<li>$:/state/tab/moresidebar-401116514</li>
+
+<li>$:/state/tab/sidebar--1835078512</li>
+
 <li>$:/StoryList</li>
 
 <li>$:/temp/info-plugin</li>
@@ -163,7 +171,11 @@ Error message and password prompt
 
 <li>Glossaire</li>
 
+<li>HTML header</li>
+
 <li>macros</li>
+
+<li>Semainier</li>
 
 <li>Table des matières</li>
 
@@ -8714,8 +8726,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div bag="default" created="20181113130709099" modified="20181113130716468" revision="0" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
-<pre>[[Table des matières]]</pre>
+<div bag="default" created="20181113130709099" modified="20231022185531925" revision="0" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<pre>[[Semainier]]</pre>
 </div>
 <div bag="default" revision="0" title="$:/isEncrypted">
 <pre>no</pre>
@@ -8792,7 +8804,19 @@ Error message and password prompt
 <div bag="default" created="20181113130525973" modified="20200122163527288" revision="0" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>420-XXX-LI Nom du cours (session)</pre>
 </div>
-<div list="css [[Table des matières]]" title="$:/StoryList">
+<div created="20231022185455840" modified="20231022185455840" title="$:/state/showeditpreview">
+<pre>yes</pre>
+</div>
+<div created="20231022184619780" modified="20231022184621872" title="$:/state/tab--868624678">
+<pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
+</div>
+<div created="20231022184615988" modified="20231022184628112" title="$:/state/tab/moresidebar-401116514">
+<pre>$:/core/ui/MoreSideBar/Shadows</pre>
+</div>
+<div created="20231022184556895" modified="20231022185326343" title="$:/state/tab/sidebar--1835078512">
+<pre>Table des matières</pre>
+</div>
+<div list="$:/ControlPanel Semainier [[Table des matières]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8849,8 +8873,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210822182352824" modified="20231021003352003" title="$:/temp/search">
-<pre>css</pre>
+<div created="20210822182352824" modified="20231022185328025" title="$:/temp/search">
+<pre></pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.17">
 <pre>{
@@ -8964,109 +8988,8 @@ Error message and password prompt
 <div bag="default" created="20181113130651975" modified="20181113130653357" revision="0" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki">
 <pre>fluid-fixed</pre>
 </div>
-<div bag="default" created="20181113131237544" modified="20231022184520235" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
-<pre>.boite {
-   background: #dddddd;
-   padding: 1em;
-   border: 2px solid darkblue;
-   border-radius: 10px;
-   margin: 2em;
-}
-
-.formule {
-   background: #ffffcc;
-   padding: 0.5em;
-   margin: 0.5em auto 0.5em auto;
-   text-align: center;
-   border: 1px dotted grey;
-   border-radius: 10px;
-   width: 50%;
-}
-
-.stop::before {
-   background-image: url('https://www.onlygfx.com/wp-content/uploads/2020/05/stop-stamp-1.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   display: inline-block;
-   width: 200px;
-   height: 100px;
-   content:&quot;&quot;;
-}
-
-.important::before {
-   background-image: url('https://i.imgur.com/F4wNzDz.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   display: inline-block;
-   width: 200px;
-   height: 100px;
-   content:&quot;&quot;;
-}
-
-.defi::before {
-   background-image: url('https://i.imgur.com/gCXeYiN.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   display: inline-block;
-   width: 200px;
-   height: 100px;
-   content:&quot;&quot;;
-}
-
-.attention::before {
-   background-image: url('https://i.imgur.com/TGHe7KV.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   display: inline-block;
-   width: 200px;
-   height: 100px;
-   content:&quot;&quot;;
-}
-
-.note::before {
-   background-image: url('https://i.imgur.com/GfxBmDf.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   display: inline-block;
-   width: 200px;
-   height: 100px;
-   content:&quot;&quot;;
-}
-
-.notice {
-   color: darkgreen;
-   background-color: lightgreen;
-   font-weight: bolder;
-   font-size: 0.8em;
-   font-familiy: sans-serif;
-   border: 1px solid green;
-   border-radius: 5px;
-   padding: 2px 5px;
-}
-
-/* Pour cacher dates */
-.tc-story-river .tc-subtitle {
-   display:none;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-img, iframe {
-  vertical-align: top;
-}
-
-iframe {
-  border: 2px solid darkblue;
-  border-radius: 10px;
-  margin: 1em;
-}
-
-pre, code {
-    word-wrap: normal;
-    white-space: pre;
-}</pre>
+<div bag="default" created="20181113131237544" modified="20231022185322185" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
+<pre></pre>
 </div>
 <div bag="default" created="20181113131413318" modified="20181113131434698" revision="0" tags="[[Table des matières]]" title="Glossaire" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -9074,6 +8997,9 @@ pre, code {
 &lt;$macrocall $name=&quot;toc-selective-expandable&quot; tag=&lt;&lt;currentTiddler&gt;&gt;/&gt;
 
 &lt;/div&gt;</pre>
+</div>
+<div created="20231022185228316" modified="20231022185307806" tags="$:/tags/RawMarkup" title="HTML header" type="text/plain">
+<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://codepen.io/shrodi/pen/PoVoaKX.css&quot;&gt;</pre>
 </div>
 <div bag="default" created="20181113131129621" modified="20181113131210013" revision="0" tags="$:/tags/Macro" title="macros" type="text/vnd.tiddlywiki">
 <pre>\define test()
@@ -9102,6 +9028,10 @@ pre, code {
 &lt;&lt;list-links filter:&quot;[tag&lt;currentTiddler&gt;] +[sort[title]]&quot;&gt;&gt;
 &lt;/p&gt;
 \end</pre>
+</div>
+<div created="20231022185402519" modified="20231022185458257" tags="[[Table des matières]]" title="Semainier">
+<pre>| Semaine | Sections à l'étude | À faire |h
+|  |  |&lt;ul&gt;&lt;li&gt;Travail&lt;/li&gt;&lt;/ul&gt;|</pre>
 </div>
 <div bag="default" caption="Contenu" created="20181113130821883" list-before="$:/core/ui/SideBar/Open" modified="20230119164632798" revision="0" tags="$:/tags/SideBar" title="Table des matières" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
