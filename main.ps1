@@ -6,7 +6,6 @@ if (Get-Command $cmd -ErrorAction SilentlyContinue)
 {
     #Met à jour le dépôt Git (nécessite que «Git for Windows» soit installé: https://gitforwindows.org/)
     git checkout .;
-
     git pull;
 
     # Démarre les notes de cours avec le fureteur par défaut
