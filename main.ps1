@@ -21,8 +21,8 @@ else
     Add-Type -AssemblyName PresentationFramework;
     [System.Windows.MessageBox]::Show(
         "Impossible de mettre les notes à jour car la commande «$cmd» n'est pas disponible sur ce système.",
-        'Erreur',
-        0,
-        16
+        'Erreur', # Titre de la fenêtre
+        0, # bouton OK seulement
+        16 # icône d'erreur
     );
 }
