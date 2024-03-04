@@ -1,0 +1,116 @@
+.boite {
+    background: #dddddd;
+    padding: 1em;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    margin: 2em;
+ }
+ 
+ ul.boite {
+   background: #dddddd;
+    padding: 1em 1em 1em 2em;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    margin: 2em;
+ }
+ 
+ .formule {
+    background: #ffffcc;
+    padding: 0.5em;
+    margin: 0.5em auto 0.5em auto;
+    text-align: center;
+    border: 1px dotted grey;
+    border-radius: 10px;
+    width: 60%;
+ }
+ 
+ .stop::before {
+    background-image: url('https://www.onlygfx.com/wp-content/uploads/2020/05/stop-stamp-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
+ 
+ .important::before {
+    background-image: url('https://i.imgur.com/F4wNzDz.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
+ 
+ .defi::before {
+    background-image: url('https://i.imgur.com/gCXeYiN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
+ 
+ .attention::before {
+    background-image: url('https://i.imgur.com/TGHe7KV.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
+ 
+ .note::before {
+    background-image: url('https://i.imgur.com/GfxBmDf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
+ 
+ .notice {
+    color: darkgreen;
+    background-color: lightgreen;
+    font-weight: bolder;
+    font-size: 0.8em;
+    font-familiy: sans-serif;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 0 5px;
+ }
+ 
+ /* Pour cacher dates */
+ .tc-story-river .tc-subtitle {
+    display:none;
+ }
+ 
+ li {
+   margin-bottom: 0.5em;
+ }
+ 
+ iframe {
+   vertical-align: top;
+   border: 2px solid darkblue;
+   border-radius: 10px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+ }
+ 
+ img {
+   vertical-align: top;
+   border-radius: 10px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+ }
+ 
+ pre, code {
+     word-wrap: normal;
+     white-space: pre;
+ }
+ 
