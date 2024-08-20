@@ -25,7 +25,7 @@
  }
  
  .stop::before {
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2020/05/stop-stamp-1.png');
+    background-image: url('../img/stop-stamp-1.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -35,7 +35,7 @@
  }
  
  .important::before {
-    background-image: url('https://i.imgur.com/F4wNzDz.png');
+    background-image: url('../img/important.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -45,7 +45,7 @@
  }
  
  .defi::before {
-    background-image: url('https://i.imgur.com/gCXeYiN.png');
+    background-image: url('../img/defi.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -55,7 +55,7 @@
  }
  
  .attention::before {
-    background-image: url('https://i.imgur.com/TGHe7KV.png');
+    background-image: url('../img/attention.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -65,9 +65,30 @@
  }
  
  .note::before {
-    background-image: url('https://i.imgur.com/GfxBmDf.png');
+    background-image: url('../img/note.png');
     background-size: contain;
     background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
+
+ .rappel::before {
+   background-image: url('../img/rappel.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:"";
+ }
+
+ .savaistu::before {
+   background-image: url('../img/savais-tu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
     width: 200px;
     height: 100px;
@@ -79,7 +100,7 @@
     background-color: lightgreen;
     font-weight: bolder;
     font-size: 0.8em;
-    font-familiy: sans-serif;
+    font-family: sans-serif;
     border: 1px solid green;
     border-radius: 5px;
     padding: 0 5px;
@@ -89,6 +110,19 @@
  .tc-story-river .tc-subtitle {
     display:none;
  }
+
+ /* Pour rendre tous les tableaux défilables */
+/*.tc-tiddler-body table
+{
+   display:block;
+   overflow:auto;
+}*/
+
+.scrollable {
+   height: 50em;
+   display:block;
+   overflow:auto;
+}
  
  li {
    margin-bottom: 0.5em;
@@ -105,8 +139,9 @@
  img {
    vertical-align: top;
    border-radius: 10px;
-   margin-top: 0;
+   margin-top: 1em;
    margin-bottom: 1em;
+   border: 2px solid darkgray;
  }
  
  pre, code {
@@ -114,3 +149,22 @@
      white-space: pre;
  }
  
+ /*
+ .tc-tiddler-body table thead {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+ }
+
+ .tc-tiddler-body table tr {
+   color: #212121;
+ }
+ 
+ .tc-tiddler-body table tr:nth-child(odd) {
+   background-color: #7bdde2;
+ }
+
+ .tc-tiddler-body table tr:nth-child(even) {
+   background-color: #79d2aa;
+ }
+ */
