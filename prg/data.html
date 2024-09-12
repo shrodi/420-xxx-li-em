@@ -8830,7 +8830,7 @@ exports.hljs = hljs;
 <div created="20231022184556895" modified="20240227203504922" title="$:/state/tab/sidebar--1835078512">
 <pre>Table des matières</pre>
 </div>
-<div list="Semainier" title="$:/StoryList">
+<div list="macros Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8846,7 +8846,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-xxx-li-em/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;file:///E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-xxx-li-em/prg/data.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -8866,7 +8866,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-xxx-li-em/NotesDeCours.html&quot;
+            &quot;text&quot;: &quot;/E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-xxx-li-em/prg/data.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -8878,17 +8878,17 @@ exports.hljs = hljs;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1707&quot;
+            &quot;text&quot;: &quot;2560&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1067&quot;
+            &quot;text&quot;: &quot;1440&quot;
         }
     }
 }</pre>
 </div>
-<div created="20210822182352824" modified="20240304232839894" title="$:/temp/search">
-<pre></pre>
+<div created="20210822182352824" modified="20240912190023278" title="$:/temp/search">
+<pre>macro</pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.17">
 <pre>{
@@ -9015,7 +9015,7 @@ exports.hljs = hljs;
 <div created="20231022185228316" modified="20240304232821278" tags="$:/tags/RawMarkup" title="HTML header" type="text/plain">
 <pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://shrodi.github.io/420-xxx-li-em/css/notes.css&quot;&gt;</pre>
 </div>
-<div bag="default" created="20181113131129621" modified="20181113131210013" revision="0" tags="$:/tags/Macro" title="macros" type="text/vnd.tiddlywiki">
+<div bag="default" created="20181113131129621" modified="20240912190042296" revision="0" tags="$:/tags/Macro" title="macros" type="text/vnd.tiddlywiki">
 <pre>\define test()
    Allo
 \end
@@ -9041,6 +9041,16 @@ exports.hljs = hljs;
 
 &lt;&lt;list-links filter:&quot;[tag&lt;currentTiddler&gt;] +[sort[title]]&quot;&gt;&gt;
 &lt;/p&gt;
+\end
+
+\define imprimer(section)
+[[Affichage pour impression|$section$ - Impression]]
+\end
+
+\define imprimerSection()
+&lt;div class=&quot;formule&quot;&gt;
+    &lt;$macrocall $name=&quot;imprimer&quot; section=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/div&gt;
 \end</pre>
 </div>
 <div created="20231022185402519" modified="20240227203556244" tags="[[Table des matières]]" title="Semainier">
