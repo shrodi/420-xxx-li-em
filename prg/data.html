@@ -46,7 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>420-XXX-LI Nom du cours (session) — Cégep Limoilou – Enseignant: Eric Martel</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
-<link rel="stylesheet" href="https://shrodi.github.io/420-xxx-li-em/css/notes.css">
+<!-- <link rel="stylesheet" href="https://shrodi.github.io/420-xxx-li-em/css/notes.css"> -->
 
 </head>
 <body class="tc-body">
@@ -8830,7 +8830,7 @@ exports.hljs = hljs;
 <div created="20231022184556895" modified="20240227203504922" title="$:/state/tab/sidebar--1835078512">
 <pre>Table des matières</pre>
 </div>
-<div list="Semainier" title="$:/StoryList">
+<div list="[[HTML header]] Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8846,7 +8846,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-xxx-li-em/prg/data.html&quot;
+            &quot;text&quot;: &quot;file:///C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-xxx-li-em/prg/data.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -8866,7 +8866,7 @@ exports.hljs = hljs;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/E:/Users/Eric/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-xxx-li-em/prg/data.html&quot;
+            &quot;text&quot;: &quot;/C:/Users/e/OneDrive%20-%20C%C3%A9gep%20Limoilou/svn/Cours/420-xxx-li-em/prg/data.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -8878,16 +8878,16 @@ exports.hljs = hljs;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;2560&quot;
+            &quot;text&quot;: &quot;1707&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1440&quot;
+            &quot;text&quot;: &quot;1067&quot;
         }
     }
 }</pre>
 </div>
-<div created="20210822182352824" modified="20240912190251330" title="$:/temp/search">
+<div created="20210822182352824" modified="20241002132058098" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.17">
@@ -9002,8 +9002,187 @@ exports.hljs = hljs;
 <div bag="default" created="20181113130651975" modified="20181113130653357" revision="0" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki">
 <pre>fluid-fixed</pre>
 </div>
-<div bag="default" created="20181113131237544" modified="20231022185322185" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
-<pre></pre>
+<div bag="default" created="20181113131237544" modified="20241002132025630" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
+<pre>.boite {
+    background: #dddddd;
+    padding: 1em;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    margin: 2em;
+ }
+ 
+ ul.boite {
+   background: #dddddd;
+    padding: 1em 1em 1em 2em;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    margin: 2em;
+ }
+ 
+ .formule {
+    background: #ffffcc;
+    padding: 0.5em;
+    margin: 0.5em auto 0.5em auto;
+    text-align: center;
+    border: 1px dotted grey;
+    border-radius: 10px;
+    width: 60%;
+ }
+ 
+ .stop::before {
+    background-image: url('img/stop-stamp-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:&quot;&quot;;
+ }
+ 
+ .important::before {
+    background-image: url('img/important.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:&quot;&quot;;
+ }
+ 
+ .defi::before {
+    background-image: url('img/defi.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:&quot;&quot;;
+ }
+ 
+ .attention::before {
+    background-image: url('img/attention.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:&quot;&quot;;
+ }
+ 
+ .note::before {
+    background-image: url('img/note.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:&quot;&quot;;
+ }
+
+.docu::before {
+    background-image: url('img/doc.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:&quot;&quot;;
+ }
+
+ .rappel::before {
+   background-image: url('img/rappel.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:&quot;&quot;;
+ }
+
+ .savaistu::before {
+   background-image: url('img/savais-tu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    content:&quot;&quot;;
+ }
+ 
+ .notice {
+    color: darkgreen;
+    background-color: lightgreen;
+    font-weight: bolder;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 0 5px;
+ }
+ 
+ /* Pour cacher dates */
+ .tc-story-river .tc-subtitle {
+    display:none;
+ }
+
+ /* Pour rendre tous les tableaux défilables */
+/*.tc-tiddler-body table
+{
+   display:block;
+   overflow:auto;
+}*/
+
+.scrollable {
+   height: 50em;
+   display:block;
+   overflow:auto;
+}
+ 
+ li {
+   margin-bottom: 0.5em;
+ }
+ 
+ iframe {
+   vertical-align: top;
+   border: 2px solid darkblue;
+   border-radius: 10px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+ }
+ 
+ img {
+   vertical-align: top;
+   border-radius: 10px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   border: 2px solid darkgray;
+ }
+ 
+ pre, code {
+     word-wrap: normal;
+     white-space: pre;
+ }
+ 
+ /*
+ .tc-tiddler-body table thead {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+ }
+
+ .tc-tiddler-body table tr {
+   color: #212121;
+ }
+ 
+ .tc-tiddler-body table tr:nth-child(odd) {
+   background-color: #7bdde2;
+ }
+
+ .tc-tiddler-body table tr:nth-child(even) {
+   background-color: #79d2aa;
+ }
+ */</pre>
 </div>
 <div bag="default" created="20181113131413318" modified="20181113131434698" revision="0" tags="[[Table des matières]]" title="Glossaire" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -9012,8 +9191,8 @@ exports.hljs = hljs;
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20231022185228316" modified="20240304232821278" tags="$:/tags/RawMarkup" title="HTML header" type="text/plain">
-<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://shrodi.github.io/420-xxx-li-em/css/notes.css&quot;&gt;</pre>
+<div created="20231022185228316" modified="20241002132052336" tags="$:/tags/RawMarkup" title="HTML header" type="text/plain">
+<pre>&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;https://shrodi.github.io/420-xxx-li-em/css/notes.css&quot;&gt; --&gt;</pre>
 </div>
 <div bag="default" created="20181113131129621" modified="20240912190042296" revision="0" tags="$:/tags/Macro" title="macros" type="text/vnd.tiddlywiki">
 <pre>\define test()
