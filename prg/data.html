@@ -8830,7 +8830,7 @@ exports.hljs = hljs;
 <div created="20231022184556895" modified="20240227203504922" title="$:/state/tab/sidebar--1835078512">
 <pre>Table des matières</pre>
 </div>
-<div list="[[HTML header]] Semainier" title="$:/StoryList">
+<div list="css macros Semainier" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8887,7 +8887,7 @@ exports.hljs = hljs;
     }
 }</pre>
 </div>
-<div created="20210822182352824" modified="20241002132058098" title="$:/temp/search">
+<div created="20210822182352824" modified="20241007184215131" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.17">
@@ -9002,7 +9002,7 @@ exports.hljs = hljs;
 <div bag="default" created="20181113130651975" modified="20181113130653357" revision="0" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki">
 <pre>fluid-fixed</pre>
 </div>
-<div bag="default" created="20181113131237544" modified="20241002132025630" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
+<div bag="default" created="20181113131237544" modified="20241007184212446" revision="0" tags="$:/tags/Stylesheet" title="css" type="text/css">
 <pre>.boite {
     background: #dddddd;
     padding: 1em;
@@ -9020,9 +9020,11 @@ exports.hljs = hljs;
  }
  
  .formule {
+    display: block !important;
+    color: black !important;
     background: #ffffcc;
     padding: 0.5em;
-    margin: 0.5em auto 0.5em auto;
+    margin: 0.5em auto 0.5em auto !important;
     text-align: center;
     border: 1px dotted grey;
     border-radius: 10px;
@@ -9158,6 +9160,13 @@ exports.hljs = hljs;
    margin-bottom: 1em;
    border: 2px solid darkgray;
  }
+
+img.normal {
+   border-radius: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+   border: 0;
+}
  
  pre, code {
      word-wrap: normal;
@@ -9194,7 +9203,7 @@ exports.hljs = hljs;
 <div created="20231022185228316" modified="20241002132052336" tags="$:/tags/RawMarkup" title="HTML header" type="text/plain">
 <pre>&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;https://shrodi.github.io/420-xxx-li-em/css/notes.css&quot;&gt; --&gt;</pre>
 </div>
-<div bag="default" created="20181113131129621" modified="20240912190042296" revision="0" tags="$:/tags/Macro" title="macros" type="text/vnd.tiddlywiki">
+<div bag="default" created="20181113131129621" modified="20241007184153484" revision="0" tags="$:/tags/Macro" title="macros" type="text/vnd.tiddlywiki">
 <pre>\define test()
    Allo
 \end
@@ -9222,13 +9231,37 @@ exports.hljs = hljs;
 &lt;/p&gt;
 \end
 
-\define imprimer(section)
-[[Affichage pour impression|$section$ - Impression]]
+\define imprimerSection()
+&lt;$set name=&quot;cible&quot; value=&quot;$(currentTiddler)$ - Impression&quot;&gt;
+
+&lt;$button class=&quot;formule&quot; to=&lt;&lt;cible&gt;&gt; message=&quot;tm-close-other-tiddlers&quot; param=&lt;&lt;cible&gt;&gt; &gt;
+[img width=50 class=&quot;normal&quot; [img/printer.png]] &lt;b&gt;Affichage pour impression&lt;/b&gt;
+&lt;/$button&gt;
+
+&lt;/$set&gt;
 \end
 
-\define imprimerSection()
-&lt;div class=&quot;formule&quot;&gt;
-    &lt;$macrocall $name=&quot;imprimer&quot; section=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+\define TouteSection(section)
+&lt;$set name=&quot;regex&quot; value=&quot;^$section$\.&quot;&gt;
+&lt;$list filter=&quot;[!is[system]regexp:&lt;regex&gt;sort[title]]&quot;&gt;
+    &lt;h2&gt;
+       &lt;$link&gt;&lt;$transclude field=&quot;title&quot; mode=&quot;block&quot;/&gt;&lt;/$link&gt;
+    &lt;/h2&gt;
+
+    &lt;$transclude field=&quot;text&quot; mode=&quot;block&quot;/&gt;
+
+    &lt;hr/&gt;
+&lt;/$list&gt;
+
+&lt;/$set&gt;
+\end
+
+\define ssections()
+&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+
+&lt;$macrocall $name=&quot;toc-selective-expandable&quot; tag=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+
+&lt;$macrocall $name=&quot;imprimerSection&quot;/&gt;
 &lt;/div&gt;
 \end</pre>
 </div>
